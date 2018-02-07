@@ -26,7 +26,7 @@ class Node:
         else:
             if self.leftChild is not None and self.rightChild is not None:
                 self.data = self.rightChild.getMinimum()
-                self.rightChild.remove(seld.data, self)
+                self.rightChild.remove(self.data, self)
 
             elif parentNode.leftChild == self:
                 if self.leftChild is not None:
